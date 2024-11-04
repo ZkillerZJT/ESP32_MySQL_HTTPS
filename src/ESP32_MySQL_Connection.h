@@ -18,7 +18,7 @@
 #define ESP32_MySQL_Connection_H
 
 #include "ESP32_MySQL_Debug.h"
-
+#include <WiFiClientSecure.h>
 #include <ESP32_MySQL_Packet.h>
 
 typedef enum 
@@ -32,7 +32,7 @@ typedef enum
 class ESP32_MySQL_Connection : public MySQL_Packet 
 {
   public:
-    ESP32_MySQL_Connection(Client *client_instance) : MySQL_Packet(client_instance) {}
+    ESP32_MySQL_Connection(ClientSecure *client_instance) : MySQL_Packet(client_instance) {}//utilizamos una instancia segura como cliente.
     
     virtual ~ESP32_MySQL_Connection()
     {

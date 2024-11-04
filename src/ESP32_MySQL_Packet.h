@@ -19,7 +19,7 @@
 
 #include <Arduino.h>
 #include <Client.h>
-
+#include <WiFiClientSecure.h>
 #define ESP32_MYSQL_OK_PACKET         0x00
 #define ESP32_MYSQL_EOF_PACKET        0xfe
 #define ESP32_MYSQL_ERROR_PACKET      0xff
@@ -36,10 +36,10 @@ class MySQL_Packet
     //////
     
     int packet_len;         // length of current packet
-    Client *client;         // instance of client class (e.g. EthernetClient)
+    ClientSecure *client;         // instance of clientsecure class (e.g. EthernetClient)
     char *server_version;   // save server version from handshake
 
-    MySQL_Packet(Client *client_instance);
+    MySQL_Packet(ClientSecure *client_instance);
     virtual ~MySQL_Packet()
     {
 			if (buffer)

@@ -24,7 +24,7 @@
 
   #warning Using ESP32 built-in WiFi
   #include <WiFi.h>
-  WiFiClient client;
+  #include <WiFiClientSecure.h>
 
 #include <ESP32_MySQL.hpp>
 

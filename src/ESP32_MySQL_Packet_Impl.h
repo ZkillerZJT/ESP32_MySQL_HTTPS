@@ -18,7 +18,7 @@
 #define ESP32_MYSQL_PACKET_IMPL_H
 
 #include <Arduino.h>
-
+#include <WiFiClientSecure.h>
 #include <ESP32_MySQL_Encrypt_Sha1.h>
 
 #if ( USING_WIFI_ESP_AT )
@@ -33,9 +33,9 @@
 /*
   Constructor
 
-  Initialize the buffer and store client instance.
+  Initialize the buffer and store client secure instance.
 */
-MySQL_Packet::MySQL_Packet(Client *client_instance)
+MySQL_Packet::MySQL_Packet(ClientSecure *client_instance)
 {
 	buffer = NULL;
 	server_version = NULL;
