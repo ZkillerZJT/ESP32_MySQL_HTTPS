@@ -35,7 +35,7 @@
 
   Initialize the buffer and store client secure instance.
 */
-MySQL_Packet::MySQL_Packet(ClientSecure *client_instance)
+MySQL_Packet::MySQL_Packet(NetworkClientSecure *client_instance)
 {
 	buffer = NULL;
 	server_version = NULL;

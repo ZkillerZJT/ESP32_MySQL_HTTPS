@@ -36,10 +36,10 @@ class MySQL_Packet
     //////
     
     int packet_len;         // length of current packet
-    ClientSecure *client;         // instance of clientsecure class (e.g. EthernetClient)
+    NetworkClientSecure *client;         // instance of clientsecure class (e.g. EthernetClient)
     char *server_version;   // save server version from handshake
 
-    MySQL_Packet(ClientSecure *client_instance);
+    MySQL_Packet(NetworkClientSecure *client_instance);
     virtual ~MySQL_Packet()
     {
 			if (buffer)

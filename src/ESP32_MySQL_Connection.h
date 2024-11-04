@@ -32,7 +32,7 @@ typedef enum
 class ESP32_MySQL_Connection : public MySQL_Packet 
 {
   public:
-    ESP32_MySQL_Connection(ClientSecure *client_instance) : MySQL_Packet(client_instance) {}//utilizamos una instancia segura como cliente.
+    ESP32_MySQL_Connection(NetworkClientSecure *client_instance) : MySQL_Packet(client_instance) {}//utilizamos una instancia segura como cliente.
     
     virtual ~ESP32_MySQL_Connection()
     {
