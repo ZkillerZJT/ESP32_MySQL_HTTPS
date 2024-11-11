@@ -1,3 +1,9 @@
+# PRYOECTO ABANDONADO
+Descubrí que para implementar HTTPS con la lógica de esta librería, requeriría modificar múltiples librerías y no cuento con la disponibilidad de tiempo para realizarlo. en un futuro 
+Quizás retome este proyecto.
+Pero hasta el momento, este repositorio no es funcional.
+
+
 # ESP32_MySQL
 
 [![arduino-library-badge](https://www.ardu-badge.com/badge/ESP32_MySQL.svg?)](https://www.ardu-badge.com/ESP32_MySQL)
